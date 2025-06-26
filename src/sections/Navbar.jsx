@@ -1,5 +1,13 @@
 import React, {useState} from 'react'
 
+const NavItems = () => {
+    return (
+        <div>
+
+        </div>
+    )
+}
+
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -17,6 +25,9 @@ const Navbar = () => {
                     <button onClick = {toggleMenu} className= "text-neutral-400 hover:text-white focus:outline-none sm:hidden flex" aria-label = "Toggle menu">
                         <img src = {isOpen ? "/assets/close.svg" : "assets/menu.svg"} alt = "toggle" className = "w-6 h-6" />
                     </button>
+                    <nav className = "sm:flex hidden">
+                        <NavItems />
+                    </nav>
                 </div>
             </div>
         </header>
