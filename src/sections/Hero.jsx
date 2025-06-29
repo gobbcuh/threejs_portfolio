@@ -21,8 +21,28 @@ const Hero = () => {
             value: 2.5,
             min: -10,
             max: 10
+        },
+        rotationX: {
+            value: 2.5,
+            min: -10,
+            max: 10
+        },
+        rotationY: {
+            value: 2.5,
+            min: -10,
+            max: 10
+        },
+        rotationZ: {
+            value: 2.5,
+            min: -10,
+            max: 10
+        },
+        scale: {
+            value: 2.5,
+            min: -10,
+            max: 10
         }
-})
+    })
 
     return (
         <section className = "min-h-screen w-full flex flex-col relative">
@@ -41,9 +61,9 @@ const Hero = () => {
                         // scale={0.07}
                         // position={[0, 0, 0]}
                         // rotation={[0, 0, 0]}
-                        position={[0, 0, 0]}
-                        rotation={[0, 280, 0]}
-                        scale={[x.positionX, x.positionY, x.positionZ]}
+                        position={[x.positionX, x.positionY, x.positionZ]}
+                        rotation={[x.rotationX, x.rotationY, x.rotationZ]}
+                        scale={[x.scale, x.scale, x.scale]}
                     />
                         <ambientLight intensity={1} />
                         <directionalLight position={[10, 10, 10]} intensity={0.5} />
