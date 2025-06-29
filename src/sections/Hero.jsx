@@ -32,17 +32,19 @@ const Hero = () => {
             </div>
 
             <div className= "w-full h-full absolute inset-0">
+                <Leva />
                 <Canvas className= "w-full h-full">
                     <Suspense fallback={<CanvasLoader />}>
                     <PerspectiveCamera makeDefault position={[0, 0, 30]} />
 
                     <HackerRoom
                         // scale={0.07}
+                        // position={[0, 0, 0]}
+                        // rotation={[0, 0, 0]}
                         position={[0, 0, 0]}
                         rotation={[0, 280, 0]}
                         scale={[x.positionX, x.positionY, x.positionZ]}
                     />
-                        <Leva />
                         <ambientLight intensity={1} />
                         <directionalLight position={[10, 10, 10]} intensity={0.5} />
                     </Suspense>
