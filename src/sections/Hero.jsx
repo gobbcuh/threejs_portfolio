@@ -4,7 +4,8 @@ import { Suspense } from "react";
 import { PerspectiveCamera } from "@react-three/drei";
 import CanvasLoader from "../components/CanvasLoader.jsx";
 import {useMediaQuery} from "react-responsive";
-import {caculateSizes} from "../constants/index.js";
+import { calculateSizes } from "../constants/index.js";
+import Target from "../components/Target.jsx"; // or the correct path
 
 const Hero = () => {
     const isSmall = useMediaQuery({maxWidth: 440});
