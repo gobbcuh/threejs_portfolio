@@ -1,5 +1,3 @@
-// to be modified / set to original
-
 import { useGLTF, useTexture } from '@react-three/drei';
 
 const HackerRoom = (props) => {
