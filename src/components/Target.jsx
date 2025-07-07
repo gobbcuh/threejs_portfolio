@@ -1,3 +1,5 @@
+// to be modified / set to original
+
 import { useGLTF } from '@react-three/drei'
 import { useRef } from 'react'
 import gsap from 'gsap'
@@ -17,7 +19,7 @@ const Target = () => {
     }, []);
 
     return (
-        <mesh ref={targetRef} position={[-8, -8, 0]} rotation={[0, Math.PI / 4, 0]}>
+        <mesh ref={targetRef} position={[-8, -8, 0]} rotation={[0, Math.PI / 5, 0]}>
             <primitive object={scene} />
         </mesh>
     );

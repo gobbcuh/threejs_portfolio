@@ -32,8 +32,8 @@ const Cube = ({ ...props }) => {
     });
 
     return (
-        <Float floatIntensity={0}>
-            <group position={[15, -6.8, 0]} rotation={[2.6, 0.8, -1.8]} scale={0.74} dispose={null} {...props}>
+        <Float floatIntensity={2}>
+            <group position={[9, -4, 0]} rotation={[2.6, 0.8, -1.8]} scale={0.74} dispose={null} {...props}>
                 <mesh
                     ref={cubeRef}
                     castShadow
