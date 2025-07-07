@@ -6,6 +6,7 @@ import CanvasLoader from "../components/CanvasLoader.jsx";
 import {useMediaQuery} from "react-responsive";
 import { calculateSizes } from "../constants/index.js";
 import Target from "../components/Target.jsx";
+import ReactLogo from "../components/ReactLogo.jsx";
 
 const Hero = () => {
     const isSmall = useMediaQuery({maxWidth: 440});
@@ -16,10 +17,12 @@ const Hero = () => {
 
     return (
         <section className = "min-h-screen w-full flex flex-col relative">
-            <div className = "w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
-                <p className= "sm:text-3xl text-2xl font-medium text-white text-center font-generalsans">Hi, I am Jasmin <span className = "waving-hand">💗</span></p>
-                <p className = "hero_tag text-gray_gradient">CS Freshman Student</p>
+            <div className="w-full mx-auto flex flex-col sm:mt-28 mt-14 c-space gap-1">
+                <p className="sm:text-3xl text-2xl font-medium text-white text-center font-generalsans">
+                    Hi, I am Jasmin <span className="waving-hand">💗</span></p>
+                <p className="hero_tag text-gray_gradient">CS Freshman Student</p>
             </div>
+
 
             <div className= "w-full h-full absolute inset-0">
                 {/* <Leva /> */}
@@ -34,6 +37,7 @@ const Hero = () => {
                     />
                         <group>
                             <Target position={[-13, -8, 0]}/>
+                            <ReactLogo position={[13, 1, 0]} />
                         </group>
 
                         <ambientLight intensity={1} />
