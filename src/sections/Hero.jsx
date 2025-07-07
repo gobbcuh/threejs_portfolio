@@ -20,7 +20,7 @@ const Hero = () => {
 
     return (
         <section className = "min-h-screen w-full flex flex-col relative">
-            <div className="w-full mx-auto flex flex-col sm:mt-28 mt-14 c-space gap-1">
+            <div className="w-full mx-auto flex flex-col sm:mt-34 mt-20 c-space gap-1">
                 <p className="sm:text-3xl text-2xl font-medium text-white text-center font-generalsans">
                     Hi, I am Jasmin <span className="waving-hand">💗</span></p>
                 <p className="hero_tag text-gray_gradient">CS Freshman Student</p>
@@ -31,9 +31,9 @@ const Hero = () => {
                 {/* <Leva /> */}
                 <Canvas className= "w-full h-full">
                     <Suspense fallback={<CanvasLoader />}>
-                    <PerspectiveCamera makeDefault position={[0, 0, 20]} />
+                    <PerspectiveCamera makeDefault position={[0, 0, 15]} />
 
-                        <HeroCamera>
+                        <HeroCamera isMobile={isMobile}>
                             <HackerRoom
                                 position={sizes.deskPosition}
                                 scale={sizes.deskScale}
