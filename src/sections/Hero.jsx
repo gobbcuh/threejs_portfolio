@@ -33,7 +33,7 @@ const Hero = () => {
                         rotation={[0, -Math.PI, 0]}
                     />
                         <group>
-                            <Target posiition={sizes.targetPosition} />
+                            <Target position={[-13, -8, 0]}/>
                         </group>
 
                         <ambientLight intensity={1} />
