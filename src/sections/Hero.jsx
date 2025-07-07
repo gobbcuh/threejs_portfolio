@@ -8,6 +8,7 @@ import { calculateSizes } from "../constants/index.js";
 import Target from "../components/Target.jsx";
 import ReactLogo from "../components/ReactLogo.jsx";
 import Cube from "../components/Cube.jsx";
+import Rings from "../components/Rings.jsx";
 
 const Hero = () => {
     const isSmall = useMediaQuery({maxWidth: 440});
@@ -37,9 +38,10 @@ const Hero = () => {
                         rotation={[0, -Math.PI, 0]}
                     />
                         <group>
-                            <Target position={[-13, -8, 0]}/>
-                            <ReactLogo position={[13, 1, 0]} />
-                            <Cube position={[9, -6.8, 0]} />
+                            <Target position={sizes.targetPosition}/>
+                            <ReactLogo position={sizes.reactLogoPosition}/>
+                            <Cube position={sizes.cubePosition} />
+                            <Rings position={sizes.ringPosition} />
                         </group>
 
                         <ambientLight intensity={1} />
